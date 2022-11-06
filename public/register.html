@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>    
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Animal World</title>
+        <link rel="stylesheet" href="register.css"/>
+    </head>
+    <body>
+        <header>
+            <div class="navbar-container">
+                <div class="logo-container">
+                    <a href="index.html">
+                        <img src="https://images.unsplash.com/photo-1591160690555-5debfba289f0" alt="">
+                    </a>
+                    <h1>
+                        Animal World
+                    </h1> 
+                </div>
+            <nav>
+                <ul class="menu" tabindex="0">
+                    <li>
+                        <a href="#">Home</a>
+                        <ul>
+                            <li>
+                                <a href="index.html">Home</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="menu" tabindex="0">
+                    <li>
+                        <a href="#">About</a>
+                        <ul>
+                            <li>
+                                <a href="about.html">About Us</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="menu" tabindex="0">
+                    <li>
+                        <a href="#">Register</a>
+                        <ul>
+                            <li>
+                                <a href="register.html">Register</a>
+                            </li> 
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            </div>
+        </header> 
+        <main class="main">
+            <div class="container"> 
+                <h2>Please register here if you are a new user!</h2>
+                <form action="/register" method="POST">
+                <form name="register" action="register.php" id="contactForm" method="POST">
+                <div class="row">    
+                    <label for="name">Name : <span class="req">*</span></label>
+                    <input type="text" id="name" name="name" required/>
+                </div>
+                <div class="row">
+                    <label for="email">Email : <span class="req">*</span></label>
+                    <input type="email" id="email" name="email" required/>
+                </div>
+                <div class="checkbox">
+                    <input type="checkbox" id="checkbox" name="checkbox" checked/>
+                    <label for="checkbox">Do you want to subscribe notifications?</label>
+                </div>
+                <div class="row">   
+                    <label for="tier">Tier <span class="req">*</span></label> 
+                    <select id="tier" name="tier" required>
+                      <option value="" selected disabled>Please select</option>
+                      <option value="1">Silver Tier</option>
+                      <option value="2">Gold Tier</option>
+                      <option value="3">Platinum Tier</option>
+                    </select>
+                </div>
+                <div>
+                    <button type="submit" id="Register" name="RegisterButton">Register</button>
+                        <p>
+                            <span class="req">*</span> - Required field
+                        </p>
+                </div>
+            </form>
+            </div>
+        </main>
+        <footer>
+            <ul>
+                <li><a href="privacy.html">Privacy Policy</a></li>
+            </ul>
+        </footer>
+    </body>
+</html>

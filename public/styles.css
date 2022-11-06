@@ -1,0 +1,204 @@
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #E3F2FD;
+}
+
+/** 
+*** header ****
+**/
+
+header{
+    background-color: #1b238f;
+}
+
+header .navbar-container{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1280px;
+    margin:0 auto;
+} 
+
+.menu{
+    display: inline-flex;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li{
+    display: grid;
+    list-style: none;
+    width: 11rem;
+    margin:10px;
+    padding: 0;
+    grid-column: span 4;
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    list-style: none;
+    position: relative;
+}
+
+.menu li a{
+    display: block;
+    font-family: sans-serif;
+    color: white;
+    font-size: 14px; 
+    padding: 4px 4px; 
+    text-decoration: none;
+}
+
+.menu li ul{
+    display: none;
+    position: absolute;
+    background-color:black;
+    padding: 5px;
+    border-radius: 0 0 4px 4px;
+    top: 1.5rem;
+    }
+
+.menu li:hover ul, ul li:focus-within ul{
+        display: inline-block;
+        visibility: visible;
+        opacity: 1;
+    }
+    
+.menu li ul li{
+    width:150px;
+    border-radius: 4px;
+    display: list-item;
+}
+    
+.menu li ul li a:hover{
+    background-color: lightslategrey
+} 
+
+header h1{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: grid;
+    color: white;
+}
+
+header a img{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: grid;
+    float: left;
+    vertical-align: bottom;
+    width: 60px;
+}
+
+/** 
+*** main ***
+ **/
+
+ .main h2{
+    color: red;
+    }
+
+.cards{
+    display: flex;
+    justify-content: space-around;
+}
+
+.cards{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 1rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    text-align: center;
+}
+
+/* Style for card */
+.card-one, .card-two, .card-three, .card-four{
+    grid-column: span 3;
+    display: flex;
+    flex-direction: column;
+    border-radius: 2rem;
+    padding: 0;
+    box-shadow: 3px 3px 3px 3px lightgrey;
+    transform: translateY(-4%);
+}
+
+.card-one{
+    background-color: skyblue;
+}
+
+.card-two{
+    background-color: paleturquoise;
+}
+
+.card-three{
+    background-color: lightyellow;
+}
+
+.card-four{
+    background-color: lightsteelblue;
+}
+
+
+.card:hover{
+    box-shadow: none;
+}
+
+.card__pic{
+    aspect-ratio: 1/1;
+    width: 80%;
+}
+
+/* Style for call to action button */
+.card__link{
+    padding: 1rem;
+    border-radius: 1rem;
+    background-color: green;
+    color: white;
+    text-decoration: none;
+}
+
+/** 
+*** Footer ***
+ **/
+footer ul{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 1rem;
+    padding: 1rem;
+    background-color: #1b238f;
+    margin: 0;
+    list-style: none;
+}
+
+footer li{
+    grid-column: span 3;
+    position: relative;
+    bottom: 10%;
+    transform: translateY(0%);
+    font-weight: bold;
+}
+
+footer ul li a{
+    color: white;
+    text-decoration: none;  
+}
+
+/** breakpoint **/
+@media screen and (max-width:67.25rem){ 
+    .card-one, .card-two, .card-three, .card-four, nav ul li, footer li{
+       grid-column: span 9;
+    }
+
+    .menu{
+        padding-left: 15rem;
+    }
+}
+
