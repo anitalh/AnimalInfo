@@ -1,7 +1,7 @@
 # Multi-page Website
 ## Goal
 
-You will create a website made of several HTML pages and related CSS to demonstrate the skills learned in class so far.
+You will create a website made of several HTML pages and related CSS
 
 The website will be about an animal of your choice (real or not, but make sure you will be able to get any images needed following the restrictions in this README!)
 
